@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'TextBold'; /*a name to be used later*/
+  src: url('../fonts/MovistarText-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'TextItalic'; /*a name to be used later*/
+  src: url('../fonts/MovistarText-Italic.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'TextRegular'; /*a name to be used later*/
+  src: url('../fonts/MovistarText-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'HeadlineBold'; /*a name to be used later*/
+  src: url('../fonts/MovistarHeadline-Bold.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'HeadlineRegular'; /*a name to be used later*/
+  src: url('../fonts/MovistarHeadline-Regular.ttf'); /*URL to font*/
+}
+
+.text-bold{
+  font-family: 'TextBold';
+}
+.text-italic{
+  font-family: 'TextItalic';
+}
+.text-regular{
+  font-family: 'TextRegular';
+}
+.headline-bold{
+  font-family: 'HeadlineBold';
+}
+.headline-regular{
+  font-family: 'HeadlineRegular';
+}
+html {
+  height: 100%
+}
+h1 {
+  color: #c91010;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+.container{
+  width: 370px;
+  height: 370px;
+  text-align: center;
+  background-color: rgb(17, 90, 111);
+  border-radius: 4px;
+  margin: 0 auto;
+  margin-top:150px;
+}
+.container img{
+  /*width: 30%;*/
+  /*height: 70px;*/
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+input{
+  height: 38px;
+  width: 300px;
+  font-size: 18px;
+  margin-bottom: 20px !important;
+  background-color: #fff;
+  padding-left: 40px;
+}
+.form-input input{
+  width: 255px !important;
+  border: none;
+  height: 35px !important;
+}
+.form-input::before{
+  content: url("../img/user.png");
+  position: absolute;
+  /*padding-left: 5px;*/
+  color: #2b7e8a;
+  /*padding-top: 5px;*/
+  font-size: 30px;
+}
+.form-input:last-child::before{
+  content: url("../img/pass.png");
+}
+.btn-login{
+  /*height: 50px;*/
+  margin-top: 18px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  background-color: #00b09e;
+  text-align: center;
+  padding-left: 0px;
+  /*border-bottom: 4px solid #00b09e;*/
+
+}
+a{
+  color: #fff;
+}
+a:link   
+{   
+ text-decoration:none;   
+}
+body{
+  margin: 0 auto;
+  font-family:sans-serif;
+}
+header{
+  background: url("../img/encabezado.jpg");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  height: 64px;
+  padding: 0px;
+  
+}
+section{
+  background: url("../img/fondo-filtros.jpg");
+  background-repeat:no-repeat;
+  background-size: 100%;
+  height: 126px;
+  padding: 0px;
+}
+article{
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+.camposhead{
+  text-align: center;
+  background-color: #bdbdbd;
+  color: white;
+  height: 40px;
+}
+.bordeizquierda{
+border-radius: 5px 0px 0px 5px;
+-moz-border-radius: 5px 0px 0px 5px;
+-webkit-border-radius: 5px 0px 0px 5px;
+
+}
+.bordederecha{
+  border-radius: 0px 5px 5px 0px;
+-moz-border-radius: 0px 5px 5px 0px;
+-webkit-border-radius: 0px 5px 5px 0px;
+}
+.margen{
+  padding-top: 1%;
+}
+.titulogestion{
+  color: #2b7e8a;
+  font-weight: bolder;
+}
+.botoncrear{
+  float:right;
+  background-image: url("../img/rectangulo1.png");
+  width: 75px;
+  height: 26px;
+  text-align: center;
+  color: white;
+}
+.crear{
+  padding: 4px;
+}
+.filtro{
+  border-radius: 5px;
+  width: 10%;
+  height: 25px;
+}
+.combo{
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+}
+.filtros{
+  padding-top: 2%;
+}
+.opcion{
+  padding-top: 2%;
+}
+.cabecera{
+  border: 1px;
+  border-color: black;
+  margin-left: 150px;
+  margin-right: 150px;
+  height: 64px;
+}
+
+.item-gestiones{
+  height: 120px;
+}
+.first-item{
+  border-radius: 10px 10px 0px 0px;
+  background-color: #00AF9E;
+}
+.other-first-item{
+  border-radius: 10px 10px 0px 0px;
+  background-color: #0BB7B9;
+}
+.second-item{
+  background-color: #01bfbf;
+}
+.third-item{
+  background-color: #00cde0;
+}
+.last-item{
+  background-color: #2deef7;
+  border-radius: 0px 0px 10px 10px;
+}
+.menu-gestiones{
+  padding-right: 20px;
+}
+.categorias{
+  background-color: #000;
+  height: 100px;
+  border-radius: 0px 0px 10px 10px;
+}
+.text-gestion{
+  color: #fff;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 100%;
+}
+.title-gestion{
+  font-size: 21px;
+}
+.sub-title-gestion{
+  font-size: 15px;
+  bottom: 0;
+  margin-bottom: 0px;
+}
+.sub-header{
+  background-color: #09556C;
+  height: 60px;
+}
+.box-aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-aligner-item {
+  max-width: 50%;
+}
+
+.icon-box{
+  height: 150px;
+}
+.icon-text{
+  color: #235369;
+  font-size: 27px;
+}
+
+.next-icon{
+  margin-top: 30px;
+}
+
+.sub-header-text{
+  font-size: 18px;
+  color: #fff;
+}
+.name-header{
+  color: #fff;
+  margin-top: 22px;
+}
+
+.logo-telefonica{
+  width: 110px;
+  margin-top: 20px;
+}
