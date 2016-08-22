@@ -3,44 +3,16 @@
 angular.module('myApp', ['ngRoute', 'myApp.filters', 'myApp.services', 'myApp.directives']).
 config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.
-  when('/login', {
-    templateUrl: 'partials/login',
-    controller: LoginCtrl
+  when('/page1', {
+    templateUrl: 'partials/page1',
+    controller: Page1Ctrl
   }).
-  when('/dashboard', {
-    templateUrl: 'partials/dashboard',
-    controller: DashboardCtrl
-  }).
-  when('/altapura', {
-    templateUrl: 'partials/altapura',
-    controller: AltaPuraCtrl
-  }).
-  when('/altacomponente', {
-    templateUrl: 'partials/altacomponente',
-    controller: AltaPuraCtrl
-  }).
-  when('/migraciones', {
-    templateUrl: 'partials/migraciones',
-    controller: AltaPuraCtrl
-  }).
-  when('/categorias', {
-    templateUrl: 'partials/categorias',
-    controller: AltaPuraCtrl
-  }).
-  when('/monotv', {
-    templateUrl: 'partials/monotv',
-    controller: AltaPuraCtrl
-  }).
-  when('/sva', {
-    templateUrl: 'partials/sva',
-    controller: AltaPuraCtrl
-  }).
-  when('/svatv', {
-    templateUrl: 'partials/svatv',
-    controller: AltaPuraCtrl
+  when('/page2', {
+    templateUrl: 'partials/page2',
+    controller: Page2Ctrl
   }).
   otherwise({
-    redirectTo: '/login'
+    redirectTo: '/page1'
   });
   $locationProvider.html5Mode(true);
 }]);
