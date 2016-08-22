@@ -15,23 +15,11 @@ app.set('view engine', 'html');
 app.use(bodyparser.urlencoded({extended: false}));
 app.use(bodyparser.json());
 app.use(express.static(__dirname + '/public'));
-// });
-
-
-// app.configure('development', function(){
-//   app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-// });
-
-// app.configure('production', function(){
-//   app.use(express.errorHandler());
-// });
 
 // Routes
 
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
-
-// JSON API
 
 // redirect all others to the index (HTML5 history)
 app.get('*', routes.index);
